@@ -91,10 +91,10 @@ countries.describe()
 
 
 def q1():
-    # Selecting the regions and remove blank spaces
+    # Selecting the regions and removing blank spaces
     regions = countries["Region"].apply(lambda x: x.strip()).unique()
     
-    # Transforming the numpy.array to list and sort it alphabetically
+    # Transforming the numpy.array to list and sorting it alphabetically
     sorted_regions = sorted(regions.tolist())
     
     return sorted_regions
@@ -202,7 +202,7 @@ def q5():
     n_outliers_below = countries["Net_migration"][(countries["Net_migration"] < first_quantile - 1.5 * iqr)].count()
     
     # Returning a tuple with: number of outliers on the inferior side, then on the superior side and lastely,
-    # a boolean represeting the answer of the question "these outliers should be removed?""
+    # a boolean represeting the answer of the question "these outliers should be removed?"
     return tuple((n_outliers_below, n_outliers_above, False))
 
 

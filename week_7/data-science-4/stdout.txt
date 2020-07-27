@@ -22,4 +22,4 @@ test_submit.py::test_q7 PASSED                                           [100%]
 
 -- Docs: https://docs.pytest.org/en/latest/warnings.html
 ---- generated xml file: /home/arthur/codenation/data-science-4/output.xml -----
-========================= 7 passed, 1 warning in 3.72s =========================
+======================== 7 passed, 1 warning in 12.06s =========================
